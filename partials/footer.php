@@ -39,6 +39,8 @@
 				<ul class="nav nav-pills span8">
 					<?/* https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwww.tentaclecms.com&text=I%20just%20downloaded%20Tentacle%20CMS,%20you%20should%20try%20it%20as%20well!%20Get%20it%20here:%20&tw_p=tweetbutton&url=http%3A%2F%2Fwww.tentaclecms.com */?>
 					<li>
+						<a href="https://www.digitalocean.com/?refcode=71843d158a2f" target="_blank"  onClick="ga('send', 'event', 'Footer', 'Link', 'Digital Ocean', 1); mixpanel.track('Footer Navigation', { 'link': 'Digital Ocean' });">Powered by a $5 VPS</a>
+					</li><li>
 						<a href="https://twitter.com/#!/TentacleCMS" target="_blank"  onClick="ga('send', 'event', 'Footer', 'Link', 'Twitter', 1); mixpanel.track('Footer Navigation', { 'link': 'Twitter' });">@TentacleCMS</a>
 					</li>
 					<li class="">
