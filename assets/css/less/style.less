@@ -3,10 +3,18 @@
 /* Body and structure
 -------------------------------------------------- */
 body {
-	position: relative;
-	padding-top: 67px;
-	background-color: #FCFCFC;
-	background: url('../img/bgnoise.gif');
+  position: relative;
+  padding-top: 67px;
+  background-color: #FCFCFC;
+  background: url('../img/bgnoise.gif');
+  font-size: 14px;
+  overflow-y: auto;
+}
+
+html {
+  overflow-y: auto;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
 }
 
 header {
@@ -54,6 +62,25 @@ h1 {
   a, a:hover {
     color: @grayDark;
   }
+}
+
+h1, h2, h3 {
+  font-weight: 400
+}
+h2 {
+  line-height: 1.2;
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem
+}
+h1 a, h2 a {
+  font-weight: normal;
+  color: #444;
+}
+
+h4 > small {
+  font-style: italic;
 }
 
 /* Navbar
@@ -252,17 +279,20 @@ h1 {
 .blog {
   .container {
     .post {
-      font-size: 22px;
-      line-height: 1.6;
+      font-size: @baseFontSize * 1.5;
+      line-height: @baseLineHeight * 1.5;
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       hyphens: auto;
-      margin-bottom: 45px;
+      margin-bottom: 2em;
       p {
-        margin-bottom: 45px;
+        font-size: @baseFontSize * 1.5;
+        font-weight: 200;
+        line-height: @baseLineHeight * 1.5;
+        margin: 0 0 2em;
       }
       li {
-        line-height: 1.2;
+        line-height: @baseLineHeight * 1.5;
       }
       ul {
         margin-bottom: 45px;
