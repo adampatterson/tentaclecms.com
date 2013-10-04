@@ -68,13 +68,15 @@
 			<div class="row bump">
 				<div class="span8">&nbsp;</div>
 			</div>
+
 		</div> <!-- /container -->
 	</footer>
  	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="<?= THEME ?>/assets/js/application.min.js"></script>
+	<script src="<?= THEME ?>/assets/js/prism.js"></script>
 
-	<!--<a href="https://github.com/adampatterson/Tentacle/tree/beta-wip" class="visible-desktop"><img style="position: absolute; top: 60px; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>-->
+    <!--<a href="https://github.com/adampatterson/Tentacle/tree/beta-wip" class="visible-desktop"><img style="position: absolute; top: 60px; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>-->
 
 	<script type="text/javascript" charset="utf-8">	
 	
@@ -98,6 +100,15 @@
         });
     </script>
 
+    <? //theme::part('partials/scroll-trigger') ?>
+
     <? render_footer( ); ?>
+
+    <style type="text/css">
+        #habla_beta_container_do_not_rely_on_div_classes_or_names {
+            display: none
+        }
+    </style>
+
     </body>
 </html>

@@ -1,6 +1,6 @@
 <?
  /*
-Name: Home Page
+Name: Download
 URI: http://tcms.me/
 Description: This is the Tentacle default theme.
 Author: Tentacle
@@ -18,9 +18,6 @@ theme::part( 'partials/header',array( 'title'=>'Thanks for downloading Tentacle 
 
             <div class="span6">
                 <h1>Thanks!</h1>
-                <div class="alert alert-error">
-                  <strong>Notice!</strong> We are in early beta, because of this updates are constant and errors might be a common occurrence.
-                </div>
 
                 <p class="lead">Click <a href="http://api.tentaclecms.com/get/download"  onClick="mixpanel.track('Content', { 'link': 'Download', 'version': 'v 0.9.5.1 Beta' });">here</a> if your download does not automatically start.</p>
                 <p class="lead">Tentacle CMS is a new, and with that we rely of your feedback. If you have any issues at all please contact ups, or Submit an issue buy following <a href="https://github.com/adampatterson/Tentacle/wiki/Reporting-a-bug">these steps</a>.</p>
@@ -41,9 +38,9 @@ theme::part( 'partials/header',array( 'title'=>'Thanks for downloading Tentacle 
                         <h2>Installation</h2>
                         <ul>
                             <li>Download</li>
-                            <li>Extract the Tentacle archive and upload the contents to your web server.</li>
+                            <li>Extract the archive and upload the contents to your web server.</li>
                             <li>Navigate to your application in a web browser.</li>
-                            <li>Follow the setup!</li>
+                            <li>Follow the instructions!</li>
                         </ul>
                     </div>
                 </div>
