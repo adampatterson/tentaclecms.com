@@ -55,6 +55,9 @@
 				</ul>
 				<ul class="nav pull-right">
 					<li>
+						<a href="https://plus.google.com/+Tentaclecms/posts" target="_blank"  onClick="ga('send', 'event', 'Navigation', 'Link', 'GooglePlus', 1);  mixpanel.track('Header Navigation', { 'link': GooglePlus });">+TentacleCMS</a>
+					</li>
+                    <li>
 						<a href="https://twitter.com/#!/TentacleCMS" target="_blank"  onClick="ga('send', 'event', 'Navigation', 'Link', 'Twitter', 1);  mixpanel.track('Header Navigation', { 'link': 'Twitter' });">@TentacleCMS</a>
 					</li>
 					<li class="">
