@@ -20,7 +20,7 @@ theme::part( 'partials/header',array( 'title'=>'Welcome to Tentacle', 'assets'=>
 					<p class="lead">Tentacle makes it easy to Design, Develop, and Write content for the web.</p>
 					<p class="lead">It's goal is to help web professionals and small businesses create fast and flexible websites with the user in mind.</p>
 					<p class="lead">
-						<br /><a href="<?= BASE_URL ?>download/" onClick="ga('send', 'event', 'Button', 'Download v 0.9.5.1 Beta', 1); mixpanel.track('Content', { 'Button': 'Download', 'version': 'v 0.9.5.1 Beta' });" class="btn btn-primary btn-large btn-block">&nbsp;&nbsp;&nbsp;Download v0.9.5.1 Beta&nbsp;&nbsp;&nbsp;</a>
+						<br /><a href="<?= BASE_URL ?>download/" onClick="ga('send', 'event', 'Button', 'Download v 0.9.5.2 Beta', 1); mixpanel.track('Content', { 'Button': 'Download', 'version': 'v 0.9.5.2 Beta' });" class="btn btn-primary btn-large btn-block">&nbsp;&nbsp;&nbsp;Download v0.9.5.2 Beta&nbsp;&nbsp;&nbsp;</a>
 					</p>
 				</div>
 				<div class="app-image pull-right">
