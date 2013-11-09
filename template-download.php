@@ -19,31 +19,32 @@ theme::part( 'partials/header',array( 'title'=>'Thanks for downloading Tentacle 
             <div class="span6">
                 <h1>Thanks!</h1>
 
-                <p class="lead">Click <a href="http://api.tentaclecms.com/get/download"  onClick="mixpanel.track('Content', { 'link': 'Download', 'version': 'v 0.9.5.1 Beta' });">here</a> if your download does not automatically start.</p>
+                <p class="lead">Click <a href="http://api.tentaclecms.com/get/download"  onClick="mixpanel.track('Content', { 'link': 'Download', 'version': 'release_version()' });">here</a> if your download does not automatically start.</p>
                 <p class="lead">Tentacle CMS is a new, and with that we rely of your feedback. If you have any issues at all please contact ups, or Submit an issue buy following <a href="https://github.com/adampatterson/Tentacle/wiki/Reporting-a-bug">these steps</a>.</p>
 
-                <div class="row">
-
-                    <div class="span3">
-                        <h2>Requirements</h2>
-                        <ul>
-                            <li>PHP 5.3 or greater</li>
-                            <li>MySQL with PDO compatible</li>
-                            <li>cURL</li>
-                            <li>Apache Mod URL</li>
-                        </ul>
-                    </div>
-
-                    <div class="span3">
-                        <h2>Installation</h2>
-                        <ul>
-                            <li>Download</li>
-                            <li>Extract the archive and upload the contents to your web server.</li>
-                            <li>Navigate to your application in a web browser.</li>
-                            <li>Follow the instructions!</li>
-                        </ul>
-                    </div>
-                </div>
+<!--                <div class="row">-->
+<!---->
+<!--                    <div class="span3">-->
+<!--                        <h2>Requirements</h2>-->
+<!--                        <ul>-->
+<!--                            <li>PHP 5.3 or greater</li>-->
+<!--                            <li>MySQL with PDO compatible</li>-->
+<!--                            <li>cURL</li>-->
+<!--                            <li>Apache Mod URL</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="span3">-->
+<!--                        <h2>Installation</h2>-->
+<!--                        <ul>-->
+<!--                            <li>Download</li>-->
+<!--                            <li>Extract the archive and upload the contents to your web server.</li>-->
+<!--                            <li>Navigate to your application in a web browser.</li>-->
+<!--                            <li>Follow the instructions!</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
 
             </div>
             <div class="span5 offset1">
