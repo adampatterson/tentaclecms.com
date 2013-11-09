@@ -26,8 +26,7 @@ $author_meta = $author->get_meta ( $post->author );
 		<div class="span8 post">
             <?= the_content( $post->content ); ?>
             <?= render_content(); ?>
-            <? if ( get::option('disqus_account') != '')
-                disqus::comments_form( $post->id ); ?>
+            <? disqus::comments_form( $post->id ); ?>
 		</div><!--/span8-->
 
         <div class="span3 offset1">
