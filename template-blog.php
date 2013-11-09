@@ -30,9 +30,11 @@ theme::part('partials/header',array('title'=>'Blog','assets'=>'marketing')); ?>
                     </small></p>
                 <? endif; ?>
 
-                <?= the_exerpt( the_content($post->content), 600 ); ?>
+                <?//= the_content($post->content); ?>
                 <p>
                     <a href="<? _e(BASE_URL.$post->uri) ?>" onClick="ga('send', 'event', 'Post', 'Button', '<? _e($post->title) ?>', 1); mixpanel.track('Content', { 'Button': 'Post', 'version': '<? _e($post->title) ?>' });" class="btn btn-primary btn-small">View Post</a>
+                    <? if ( get::option('disqus_account') != '') ?>
+                        &nbsp;&nbsp;<? disqus::comments( $post ) ?>
                 </p>
                 <hr />
             </div>
