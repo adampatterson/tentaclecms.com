@@ -100,7 +100,7 @@
         });
     </script>
 
-    <? //theme::part('partials/scroll-trigger') ?>
+    <? theme::part('partials/scroll-trigger') ?>
 
     <? render_footer( ); ?>
 

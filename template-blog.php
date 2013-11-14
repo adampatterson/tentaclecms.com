@@ -15,22 +15,20 @@ theme::part('partials/header',array('title'=>'Blog','assets'=>'marketing')); ?>
 		<?
 	// Loop all of the blog posts.
 	foreach ($posts as $post): $author_meta = $author->get_meta ( $post->author ); ?>
-		<div class="row bump">
-
-            <div class="span8">
+		<div class="row bump ">
+            <div class="span12">
                 <h1 class="title"><a href="<? _e(BASE_URL.$post->uri) ?>" onClick="ga('send', 'event', 'Post', 'Link', '<? _e($post->title) ?>', 1); mixpanel.track('Content', { 'Link': 'Post', 'version': '<? _e($post->title) ?>' });"><? _e($post->title) ?></a></h1>
 
-                <p>By <? _e($author_meta->first_name.' '.$author_meta->last_name) ?>
-
-                <? if ( count( $category->get_relations( $post->id ) ) ):?>
-                    <small> in
+                <p>By <? _e($author_meta->first_name.' '.$author_meta->last_name) ?>  <? if ( count( $category->get_relations( $post->id ) ) ):?><small>in:
                         <? foreach( $category->get_relations( $post->id ) as $relation ): ?>
                             <a href="<?=BASE_URL?>category/<?=$relation->slug ?>"><?_e($relation->name) ?></a>
                         <? endforeach; ?>
-                    </small></p>
-                <? endif; ?>
+                        </small><? endif; ?>
+                </p> <hr />
+            </div>
+            <div class="span8 post">
 
-                <?//= the_content($post->content); ?>
+                <?= the_exerpt($post->content, 50); ?>
                 <p>
                     <a href="<? _e(BASE_URL.$post->uri) ?>" onClick="ga('send', 'event', 'Post', 'Button', '<? _e($post->title) ?>', 1); mixpanel.track('Content', { 'Button': 'Post', 'version': '<? _e($post->title) ?>' });" class="btn btn-primary btn-small">View Post</a>
                     &nbsp;&nbsp;<? disqus::comments( $post ) ?>
