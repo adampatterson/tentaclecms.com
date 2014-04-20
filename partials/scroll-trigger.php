@@ -13,7 +13,7 @@
     <div id="the_box">
         <a href="#close" id="closebox">x</a><h3>Keep in touch!</h3>
 
-        <form method="post" id="newsletter" action="http://www.industrymailout.com/Industry/SubscribeRedirect.aspx" >
+        <form method="post" id="newsletter" action="https://www.mailoutinteractive.com/Industry/SubscribeRedirect.aspx" >
 
             <input type="hidden" name="mailinglistid" value="27205" />
             <input type="hidden" name="success" value="<?= BASE_URL.URI ?>" />

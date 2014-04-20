@@ -9,8 +9,7 @@
 	<? endif;?>
 
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-	<meta name="description" content="<?= get::option('blogdescription'); ?>">
-    <meta name="author" content="Adam Patterson">
+  	<meta name="description" content="<?= get::option('blogdescription'); ?>">
 
     <meta property="og:title" content="<?= get::option('blogname'); ?>">
     <meta property="og:type" content="website">
@@ -63,9 +62,9 @@
 					<li class="">
 						<a href="http://tentaclecms.com/download/"  onClick="ga('send', 'event', 'Navigation', 'Link', 'Download', 1);  mixpanel.track('Header Navigation', { 'link': 'Download' });">Download</a>
 					</li>
-					<li>
-						<a href="http://community.tentaclecms.com/"  onClick="ga('send', 'event', 'Navigation', 'Link', 'Community', 1);   mixpanel.track('Header Navigation', { 'link': 'Community' });">Community</a>
-					</li>
+<!--					<li>-->
+<!--						<a href="http://community.tentaclecms.com/"  onClick="ga('send', 'event', 'Navigation', 'Link', 'Community', 1);   mixpanel.track('Header Navigation', { 'link': 'Community' });">Community</a>-->
+<!--					</li>-->
 					<li class="">
 						<a href="mailto:hello@tentaclecms.com" onClick="ga('send', 'event', 'Navigation', 'Link', 'Contact', 1);   mixpanel.track('Header Navigation', { 'link': 'Contact' });">Contact Us</a>
 					</li>
