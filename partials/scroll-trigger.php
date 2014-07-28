@@ -13,36 +13,39 @@
     <div id="the_box">
         <a href="#close" id="closebox">x</a><h3>Keep in touch!</h3>
 
-        <form method="post" id="newsletter" action="https://www.mailoutinteractive.com/Industry/SubscribeRedirect.aspx" >
-
-            <input type="hidden" name="mailinglistid" value="27205" />
-            <input type="hidden" name="success" value="<?= BASE_URL.URI ?>" />
-            <input type="hidden" name="errorparm" value="error" />
-
-            <div class="control-group">
-                <label for="firstname">First Name</label>
-                <div class="controls">
-                    <input type="text" name="givenname" maxlength="50" class="span3 input-xlarge input-small" id="firstname" >
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+            <form action="//adampatterson.us1.list-manage.com/subscribe/post?u=c21d0f4a99a90fdf9c412e45a&amp;id=8b21ce6336" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                 </div>
-
-                <label for="lastname">Last Name</label>
-                <div class="controls">
-                    <input type="text" name="familyname" maxlength="50" class="span3 input-xlarge" id="lastname" >
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE1">First Name </label>
+                    <input type="text" value="" name="MMERGE1" class="" id="mce-MMERGE1">
                 </div>
-
-                <label for="email">Email</label>
-                <div class="controls">
-                    <input type="text" name="email" required="required" value="" class="email span3 input-xlarge" id="email">
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE2">Last Name </label>
+                    <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2">
                 </div>
-            </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_c21d0f4a99a90fdf9c412e45a_8b21ce6336" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </form>
+        </div>
 
-            <?php if($note = note::get('session')): ?>
-                <input type='hidden' name='history' value="<?= $note['content'];?> " />
-            <?php endif;?>
-
-            <input type="submit" value="Join" class="btn btn-primary" onClick="_gaq.push(['_trackEvent', 'Download Page', 'Button', 'Mailing List']);" />
-
-        </form>
+        <!--End mc_embed_signup-->
 
         <p id="stbMsgArea"></p>
     </div>
