@@ -7,7 +7,9 @@
 	<? if (isset($download) && $download == true): ?>
 		<meta content="0; URL=http://api.tentaclecms.com/get/download" http-equiv="Refresh" />
 	<? endif;?>
-
+    <? if (isset($beta) && $beta == true): ?>
+        <meta content="0; URL=https://github.com/adampatterson/Tentacle/archive/beta-wip.zip" http-equiv="Refresh" />
+    <? endif;?>
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   	<meta name="description" content="<?= get::option('blogdescription'); ?>">
 

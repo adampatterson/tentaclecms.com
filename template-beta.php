@@ -1,6 +1,6 @@
 <?
  /*
-Name: Download
+Name: Beta Download
 URI: http://tcms.me/
 Description: This is the Tentacle default theme.
 Author: Tentacle
@@ -9,7 +9,7 @@ License: GNU General Public License
 License URI: license.txt
 */
 
-theme::part( 'partials/header',array( 'title'=>'Thanks for downloading Tentacle CMS', 'assets'=>'marketing', 'download'=>true) ); ?>
+theme::part( 'partials/header',array( 'title'=>'Thanks for downloading Tentacle CMS', 'assets'=>'marketing', 'beta'=>true) ); ?>
 
 <div class="container">
     <div class="bump">&nbsp;</div>
