@@ -3,7 +3,7 @@
 Type: Post
 */
 
-theme::part('partials/header',array('title'=>$post->title,'assets'=>'marketing'));
+theme::part('partials/header',array('title'=>$post->title,'assets'=>'marketing', 'post'=>$post, 'post_meta'=> $post_meta));
 
 $author_meta = $author->get_meta ( $post->author );
 

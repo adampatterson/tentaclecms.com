@@ -20,9 +20,16 @@
     <meta property="og:site_name" content="<?= get::option('blogname'); ?>">
     <meta property="og:description" content="<?= get::option('blogdescription'); ?>">
 
-    <? render_meta( ); ?>
-    <? render_canonical( ); ?>
-    <? render_shortlink( ); ?>
+      <? render_meta( );
+
+      if ( isset($post_meta)):
+          render_keywords( $post_meta->meta_keywords );
+          render_description( $post_meta->meta_description );
+      else:
+          render_description( );
+      endif;
+
+      render_shortlink( ); ?>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
