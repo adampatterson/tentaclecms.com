@@ -22,26 +22,10 @@
 
       <? render_meta( );
 
-      if ( isset($post_meta)):
-          render_keywords( $post_meta->meta_keywords );
-          render_description( $post_meta->meta_description );
-      else:
-          render_description( );
-      endif;
+      render_keywords( );
+      render_description( );
 
       render_shortlink( ); ?>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-403336-32', 'tentaclecms.com');
-      ga('send', 'pageview', {
-          'anonymizeIp': true
-      });
-    </script>
 
     <script type="text/javascript">
       var base_theme      = '<?= THEME ?>';
@@ -53,6 +37,18 @@
 </head>
 <? $prettify = false ;?>
 <body <?= body_class(); ?> <? if ($prettify)echo 'onLoad="NDOnLoad();prettyPrint();"' ?>>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-403336-32', 'tentaclecms.com');
+        ga('send', 'pageview', {
+            'anonymizeIp': true
+        });
+    </script>
+
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container hidden-phone hidden-tablet">
