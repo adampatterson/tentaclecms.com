@@ -11,21 +11,15 @@
         <meta content="0; URL=https://github.com/adampatterson/Tentacle/archive/beta-wip.zip" http-equiv="Refresh" />
     <? endif;?>
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  	<meta name="description" content="<?= get::option('blogdescription'); ?>">
 
-    <meta property="og:title" content="<?= get::option('blogname'); ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="<?= BASE_URL.URI ?>">
     <meta property="og:image" content="<?= THEME ?>/assets/img/tentacle.png">
-    <meta property="og:site_name" content="<?= get::option('blogname'); ?>">
-    <meta property="og:description" content="<?= get::option('blogdescription'); ?>">
+    <meta itemprop="image" content="<?= THEME ?>/assets/img/tentacle.png">
 
-      <? render_meta( );
-
-      render_keywords( );
-      render_description( );
-
-      render_shortlink( ); ?>
+    <?  render_meta( );
+    render_description( );
+    render_keywords( );
+    render_cards( );
+    render_shortlink( );?>
 
     <script type="text/javascript">
       var base_theme      = '<?= THEME ?>';
