@@ -1,7 +1,7 @@
 <?
 // We need a unique ID for the host so hash it to keep it private and send it over
 
-function release_version () { return 'v 0.9.6'; }
+function release_version () { return 'v 0.9.7.2'; }
 
 function universal_ui( $id = null ){
 
