@@ -1,8 +1,17 @@
 <?
+function get_latest_tentacle_version(){
+    return json_decode(file_get_contents('http://api.tentaclecms.com/get/core/'));
+}
+
+function release_version () { return 'v0.9.7'; }
+
+function latest_tentacle_link(){
+    $data = get_latest_tentacle_version();
+
+    return $data;
+}
+
 // We need a unique ID for the host so hash it to keep it private and send it over
-
-function release_version () { return 'v 0.9.7.3'; }
-
 function universal_ui( $id = null ){
 
     if($_SERVER['HTTP_HOST'] == "localhost")

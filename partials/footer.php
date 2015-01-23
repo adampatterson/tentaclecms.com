@@ -26,7 +26,7 @@
 				<div class="span3">
 					<h4>Report a Bug</h4>
 					<p class="lead">If you found a bug in the CMS use the on GitHub to report it.</p>
-					<p class="lead"><a href="https://github.com/adampatterson/Tentacle/issues" class="track" data-track="bar this" onClick="ga('send', 'event', 'Footer', 'Link', 'Git Issues', 1) mixpanel.track('Content', { 'link': 'Git Issue' });">Submit an Issue</a></p>
+					<p class="lead"><a href="https://github.com/adampatterson/Tentacle/issues" class="track" data-track="Git Issues" onClick="ga('send', 'event', 'Footer', 'Link', 'Git Issues', 1) mixpanel.track('Content', { 'link': 'Git Issue' });">Submit an Issue</a></p>
 				</div>
 				<div class="span3">
 					<h4>Contribute</h4>
@@ -84,14 +84,14 @@
 		mixpanel.identify('<? universal_ui(); ?>');
 		mixpanel.track_forms("#newsletter", "Newsletter submission");
 		
-		$(".track").click(function() {
-		    // This sends us an event every time a user clicks the button
-			var Link  = $(this).data('track');
-		
-			mixpanel.track(Link); 
-		
-			return false;
-		});
+//		$(".track").click(function() {
+//		    // This sends us an event every time a user clicks the button
+//			var Link  = $(this).data('track');
+//
+//			mixpanel.track(Link);
+//
+//			return false;
+//		});
 	</script>
 
     <script type="text/javascript">
