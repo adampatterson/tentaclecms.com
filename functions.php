@@ -3,12 +3,9 @@ function get_latest_tentacle_version(){
     return json_decode(file_get_contents('http://api.tentaclecms.com/get/core/'));
 }
 
-function release_version () { return 'v0.9.7'; }
-
-function latest_tentacle_link(){
+function release_version () {
     $data = get_latest_tentacle_version();
-
-    return $data;
+    return $data->version;
 }
 
 // We need a unique ID for the host so hash it to keep it private and send it over
