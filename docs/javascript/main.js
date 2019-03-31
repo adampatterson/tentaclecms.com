@@ -1,4 +1,4 @@
-// This file is part of Natural Docs, which is Copyright © 2003-2010 Greg Valure
+// This file is part of Natural Docs, which is Copyright ï¿½ 2003-2010 Greg Valure
 // Natural Docs is licensed under version 3 of the GNU Affero General Public License (AGPL)
 // Refer to License.txt for the complete details
 
@@ -378,7 +378,7 @@ function SearchPanel(name, mode, resultsPath)
 
     /*
         var: lastSearchValue
-        The last search string executed, or an empty string if none.
+        The last search text executed, or an empty text if none.
     */
     this.lastSearchValue = "";
 

@@ -78,12 +78,12 @@
 
     <!--<a href="https://github.com/adampatterson/Tentacle/tree/beta-wip" class="visible-desktop"><img style="position: absolute; top: 60px; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>-->
 
-	<script type="text/javascript" charset="utf-8">	
-	
+	<script type="text/javascript" charset="utf-8">
+
 		//mixpanel.track_pageview("<?//= $track ?>");
 		mixpanel.identify('<? universal_ui(); ?>');
 		mixpanel.track_forms("#newsletter", "Newsletter submission");
-		
+
 //		$(".track").click(function() {
 //		    // This sends us an event every time a user clicks the button
 //			var Link  = $(this).data('track');

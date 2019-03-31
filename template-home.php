@@ -32,9 +32,8 @@ theme::part( 'partials/header',array( 'title'=>'Welcome to Tentacle', 'assets'=>
     </header>
     <div class="container">
         <div class="row" id="why">
-            <div class="span7">
+            <div class="span12">
                 <h1>Why Tentacle?</h1>
-
                 <hr />
 
                 <p class="lead">By focusing on the user we are able to refine the processes for every one.  By building Tentacle on a light weight flexible framework we are not imposing strict rules on you.	By working with and providing the tools you need we hope you can accomplish more in less time.</p>
@@ -47,7 +46,7 @@ theme::part( 'partials/header',array( 'title'=>'Welcome to Tentacle', 'assets'=>
 
                 <p><a class="btn btn-primary btn-large" href="https://github.com/adampatterson/Tentacle/wiki/Philosophy" onClick="ga('send', 'event', 'Content', 'Button', 'Wiki', 1);  mixpanel.track('Content', { 'Button': 'Wiki'});">Read more about our Philosophy</a></p>
             </div>
-
+            <!--
             <div class="span4 offset1" id='get-it'>
                 <div class="row">
                     <h1>Take it for a spin!</h1>
@@ -66,6 +65,7 @@ theme::part( 'partials/header',array( 'title'=>'Welcome to Tentacle', 'assets'=>
                     <p><a href="http://webchat.freenode.net/?channel=tentacle" class="btn btn-medium " onClick="ga('send', 'event', 'Content', 'Link', 'IRC', 1); mixpanel.track('Content', { 'link': 'IRC' });">#tentacle</a></p>
                 </div>
             </div>
+            -->
         </div>
         <?/*
 		<div class="row bump" id="features">

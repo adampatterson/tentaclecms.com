@@ -1,5 +1,5 @@
 
-// This code comes from the December 2009 release of Google Prettify, which is Copyright © 2006 Google Inc.
+// This code comes from the December 2009 release of Google Prettify, which is Copyright ï¿½ 2006 Google Inc.
 // Minor modifications are marked with "ND Change" comments.
 // As part of Natural Docs, this code is licensed under version 3 of the GNU Affero General Public License (AGPL.)
 // However, it may also be obtained separately under version 2.0 of the Apache License.
@@ -771,9 +771,9 @@ window['_pr_isIE6'] = function () {
     * all characters in sourceCode[index_n-1:index_n].
     *
     * The stylePatterns is a list whose elements have the form
-    * [style : string, pattern : RegExp, DEPRECATED, shortcut : string].
+    * [style : text, pattern : RegExp, DEPRECATED, shortcut : text].
     *
-    * Style is a style constant like PR_PLAIN, or can be a string of the
+    * Style is a style constant like PR_PLAIN, or can be a text of the
     * form 'lang-FOO', where FOO is a language extension describing the
     * language of the portion of the token in $1 after pattern executes.
     * E.g., if style is 'lang-lisp', and group 1 contains the text
@@ -797,11 +797,11 @@ window['_pr_isIE6'] = function () {
     * Context is applied to the last non-whitespace, non-comment token
     * recognized.
     *
-    * Shortcut is an optional string of characters, any of which, if the first
+    * Shortcut is an optional text of characters, any of which, if the first
     * character, gurantee that this pattern and only this pattern matches.
     *
     * @param {Array} shortcutStylePatterns patterns that always start with
-    *   a known character.  Must have a shortcut string.
+    *   a known character.  Must have a shortcut text.
     * @param {Array} fallthroughStylePatterns patterns that will be tried in
     *   order if the shortcut ones fail.  May have shortcuts.
     *
@@ -939,12 +939,12 @@ window['_pr_isIE6'] = function () {
 
   /** returns a function that produces a list of decorations from source text.
     *
-    * This code treats ", ', and ` as string delimiters, and \ as a string
+    * This code treats ", ', and ` as text delimiters, and \ as a text
     * escape.  It does not recognize perl's qq() style strings.
     * It has no special handling for double delimiter escapes as in basic, or
     * the tripled delimiters used in python, but should work on those regardless
-    * although in those cases a single string literal may be broken up into
-    * multiple adjacent string literals.
+    * although in those cases a single text literal may be broken up into
+    * multiple adjacent text literals.
     *
     * It recognizes C, C++, and shell style comments.
     *
@@ -955,17 +955,17 @@ window['_pr_isIE6'] = function () {
   function sourceDecorator(options) {
     var shortcutStylePatterns = [], fallthroughStylePatterns = [];
     if (options['tripleQuotedStrings']) {
-      // '''multi-line-string''', 'single-line-string', and double-quoted
+      // '''multi-line-text''', 'single-line-text', and double-quoted
       shortcutStylePatterns.push(
           [PR_STRING,  /^(?:\'\'\'(?:[^\'\\]|\\[\s\S]|\'{1,2}(?=[^\']))*(?:\'\'\'|$)|\"\"\"(?:[^\"\\]|\\[\s\S]|\"{1,2}(?=[^\"]))*(?:\"\"\"|$)|\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$))/,
            null, '\'"']);
     } else if (options['multiLineStrings']) {
-      // 'multi-line-string', "multi-line-string"
+      // 'multi-line-text', "multi-line-text"
       shortcutStylePatterns.push(
           [PR_STRING,  /^(?:\'(?:[^\\\']|\\[\s\S])*(?:\'|$)|\"(?:[^\\\"]|\\[\s\S])*(?:\"|$)|\`(?:[^\\\`]|\\[\s\S])*(?:\`|$))/,
            null, '\'"`']);
     } else {
-      // 'single-line-string', "single-line-string"
+      // 'single-line-text', "single-line-text"
       shortcutStylePatterns.push(
           [PR_STRING,
            /^(?:\'(?:[^\\\'\r\n]|\\.)*(?:\'|$)|\"(?:[^\\\"\r\n]|\\.)*(?:\"|$))/,
@@ -1058,11 +1058,11 @@ window['_pr_isIE6'] = function () {
     * {@code job.decorations} while re-interleaving {@code job.extractedTags},
     * and leaves the result in {@code job.prettyPrintedHtml}.
     * @param {Object} job like {
-    *    source: {string} source as plain text,
-    *    extractedTags: {Array.<number|string>} extractedTags chunks of raw
+    *    source: {text} source as plain text,
+    *    extractedTags: {Array.<number|text>} extractedTags chunks of raw
     *                   html preceded by their position in {@code job.source}
     *                   in order
-    *    decorations: {Array.<number|string} an array of style classes preceded
+    *    decorations: {Array.<number|text} an array of style classes preceded
     *                 by the position at which they start in job.source in order
     * }
     * @private
@@ -1172,8 +1172,8 @@ window['_pr_isIE6'] = function () {
     *      of decorations.  Takes a single argument job which describes the
     *      state of the computation.   The single parameter has the form
     *      {@code {
-    *        source: {string} as plain text.
-    *        decorations: {Array.<number|string>} an array of style classes
+    *        source: {text} as plain text.
+    *        decorations: {Array.<number|text>} an array of style classes
     *                     preceded by the position at which they start in
     *                     job.source in order.
     *                     The language handler should assigned this field.

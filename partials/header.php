@@ -65,13 +65,10 @@
 <!--						<a href="http://community.tentaclecms.com/"  onClick="ga('send', 'event', 'Navigation', 'Link', 'Community', 1);   mixpanel.track('Header Navigation', { 'link': 'Community' });">Community</a>-->
 <!--					</li>-->
 					<li class="">
-						<a href="mailto:hello@tentaclecms.com" onClick="ga('send', 'event', 'Navigation', 'Link', 'Contact', 1);   mixpanel.track('Header Navigation', { 'link': 'Contact' });">Contact Us</a>
+						<a href="mailto:hello@adampatterson.ca" onClick="ga('send', 'event', 'Navigation', 'Link', 'Contact', 1);   mixpanel.track('Header Navigation', { 'link': 'Contact' });">Contact Us</a>
 					</li>
                     <li>
-                        <a href="https://plus.google.com/+Tentaclecms/posts" target="_blank"  onClick="ga('send', 'event', 'Navigation', 'Link', 'GooglePlus', 1);  mixpanel.track('Header Navigation', { 'link': GooglePlus });">+TentacleCMS</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/#!/TentacleCMS" target="_blank"  onClick="ga('send', 'event', 'Navigation', 'Link', 'Twitter', 1);  mixpanel.track('Header Navigation', { 'link': 'Twitter' });">@TentacleCMS</a>
+                        <a href="https://twitter.com/TentacleCMS" target="_blank"  onClick="ga('send', 'event', 'Navigation', 'Link', 'Twitter', 1);  mixpanel.track('Header Navigation', { 'link': 'Twitter' });">@TentacleCMS</a>
                     </li>
 				</ul>
 			</div>
